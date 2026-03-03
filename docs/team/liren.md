@@ -2,7 +2,7 @@
 # Li Ren Wong
 
 **Role:** Developer  
-**Focus:** DevOps + Threading (and general backend engineering)
+**Focus:** DevOps + Threading
 
 ## About
 I am a NUS Computer Science student who builds CLI-based tools and automation-focused systems. I enjoy improving developer workflows, reliability, and performance, and I like working on projects that connect software engineering with real-world operations.
