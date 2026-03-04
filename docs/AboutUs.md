@@ -13,11 +13,9 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 ### Cheneil Gallardo Lee
 
-<img src="images/johndoe.png" width="200px">
+<img src="images/gallardo166.png" width="200px">
 
-[[homepage](http://www.comp.nus.edu.sg/~damithch)]
-[[github](https://github.com/johndoe)]
-[[portfolio](team/johndoe.md)]
+[[github](https://github.com/Gallardo166)]
 
 * Role: Project Advisor
 
@@ -33,20 +31,20 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 ### Ong Jia Cheng
 
-<img src="images/jiacheng.png" width="200px">
+<img src="images/ongjiacheng.png" width="200px">
 
 [[homepage](https://www.tinyurl.com/ongjiacheng)]
 [[github](http://github.com/ongjiacheng)]
 [[portfolio](team/jiacheng.md)]
 
 * Role: Developer
-* Responsibilities: Data
+* Responsibilities: Data Science
 
 ### Toh Yi Sheng
 
-<img src="images/johndoe.png" width="200px">
+<img src="images/yisheng.png" width="200px">
 
-[[github](http://github.com/johndoe)]
+[[github](http://github.com/yishengt)]
 [[portfolio](team/johndoe.md)]
 
 * Role: Developer
@@ -54,7 +52,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 ### Wong Li Ren
 
-<img src="images/liren.png" width="200px">
+<img src="images/oofyneril.png" width="200px">
 
 [[github](http://github.com/oofyneril)]
 [[portfolio](team/liren.md)]
