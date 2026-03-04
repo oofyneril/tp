@@ -11,7 +11,6 @@ I am a NUS Computer Science student who builds CLI-based tools and automation-fo
 ### MALAddress (Team Project)
 - Built on AddressBook3 (AB3), adapted for hawker stall owners to manage suppliers and regular customers.
 - Contributions: DevOps setup, and feature implementation.
-- Repo: (put your repo link here)
 
 ### Peggy (Java CLI Chatbot)
 - Duke-style CLI chatbot in Java with commands, storage, and clean architecture.
