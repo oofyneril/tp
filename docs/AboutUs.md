@@ -31,14 +31,14 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 ### Ong Jia Cheng
 
-<img src="images/jiacheng.png" width="200px">
+<img src="images/ongjiacheng.png" width="200px">
 
 [[homepage](https://www.tinyurl.com/ongjiacheng)]
 [[github](http://github.com/ongjiacheng)]
 [[portfolio](team/jiacheng.md)]
 
 * Role: Developer
-* Responsibilities: Data
+* Responsibilities: Data Science
 
 ### Toh Yi Sheng
 
@@ -52,7 +52,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 ### Wong Li Ren
 
-<img src="images/liren.png" width="200px">
+<img src="images/oofyneril.png" width="200px">
 
 [[github](http://github.com/oofyneril)]
 [[portfolio](team/liren.md)]
