@@ -16,8 +16,9 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 <img src="images/gallardo166.png" width="200px">
 
 [[github](https://github.com/Gallardo166)]
+[[portfolio](team/gallardo.md)]
 
-* Role: Project Advisor
+* Role: Repo Manager, Developer
 
 ### Louis Christopher Yu
 
