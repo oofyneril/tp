@@ -272,11 +272,11 @@ _{Explain here how the data archiving feature will be implemented}_
 
 ### Product scope
 
-### Target user profile: 
+#### Target user profile:
 
 MALAddress is for hawker stall owners and stall staff who manage contacts of suppliers and regular customers in a fast-paced environment.
 
-### Value proposition: 
+#### Value proposition:
 
 MALAddress lets hawker stall staff quickly store, retrieve, and update supplier/customer contact details via CLI. Staff can search contacts by keywords such as supply type or customer preferences (not just names), reducing time wasted searching across chat apps/paper notes and lowering supplier mix-ups during peak hours.
 
@@ -309,8 +309,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ### Use cases
 
-(For all use cases below, the **System** is the `AddressBook` and the **Actor** is the `user`, unless specified otherwise)
-
 **Use case 1: Add a supplier/customer contact with contact info**
 
 **MSS**
@@ -319,107 +317,13 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 2.  System shows “successfully saved” message
 3.  System refreshed the UI contact list with the latest added contact.
 
-    Use case ends.
-
 **Extensions**
 
-
 * 2a. Invalid phone format - System shows error message and does not add.
-
-* 3a.Duplicate contact detected - System rejects add and shows duplicate error.
-
-
-
-**Use case: Tag a contact as supplier/customer and update remarks**
-System updates the conta
-
-#### Design considerations:
-
-**Aspect: How undo & redo executes:**
-
-* **Alternative 1 (current choice):** Saves the entire address book.
-    * Pros: Easy to implement.
-    * Cons: May have performance issues in terms of memory usage.
-
-* **Alternative 2:** Individual command knows how to undo/redo by
-  itself.
-    * Pros: Will use less memory (e.g. for `delete`, just save the person being deleted).
-    * Cons: We must ensure that the implementation of each individual command are correct.
-
-_{more aspects and alternatives to be added}_
-
-### \[Proposed\] Data archiving
-
-_{Explain here how the data archiving feature will be implemented}_
-
-
---------------------------------------------------------------------------------------------------------------------
-
-## **Documentation, logging, testing, configuration, dev-ops**
-
-* [Documentation guide](Documentation.md)
-* [Testing guide](Testing.md)
-* [Logging guide](Logging.md)
-* [Configuration guide](Configuration.md)
-* [DevOps guide](DevOps.md)
-
---------------------------------------------------------------------------------------------------------------------
-
-## **Appendix: Requirements**
-
-### Product scope
-
-**Target user profile**:
-
-* has a need to manage a significant number of contacts
-* prefer desktop apps over other types
-* can type fast
-* prefers typing to mouse interactions
-* is reasonably comfortable using CLI apps
-
-**Value proposition**: manage contacts faster than a typical mouse/GUI driven app
-
-
-### User stories
-
-Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unlikely to have) - `*`
-
-| Priority | As a …​                                    | I want to …​                 | So that I can…​                                                        |
-|----------|--------------------------------------------|------------------------------|------------------------------------------------------------------------|
-| `* * *`  | new user                                   | see usage instructions       | refer to instructions when I forget how to use the App                 |
-| `* * *`  | user                                       | add a new person             |                                                                        |
-| `* * *`  | user                                       | delete a person              | remove entries that I no longer need                                   |
-| `* * *`  | user                                       | find a person by name        | locate details of persons without having to go through the entire list |
-| `* *`    | user                                       | hide private contact details | minimize chance of someone else seeing them by accident                |
-| `*`      | user with many persons in the address book | sort persons by name         | locate a person easily                                                 |
-
-*{More to be added}*
-
-### Use cases
-
-(For all use cases below, the **System** is the `AddressBook` and the **Actor** is the `user`, unless specified otherwise)
-
-**Use case: Add a supplier/customer contact with contact info**
-
-**MSS**
-
-1.  The user enters the add command with name and phone.
-2.  System shows “successfully saved” message
-3.  System refreshed the UI contact list with the latest added contact.
-
-    Use case ends.
-
-**Extensions**
-
-
-* 2a. Invalid phone format - System shows error message and does not add.
-* 3a.Duplicate contact detected - System rejects add and shows duplicate error.
-
-
+* 3a. Duplicate contact detected - System rejects add and shows duplicate error.
 
 **Use case 2: Tag a contact as supplier/customer and update remarks**
 System updates the contact with the new tag and updated remarks.
-
 
 **MSS**
 
@@ -427,34 +331,24 @@ System updates the contact with the new tag and updated remarks.
 2.  The system shows a “successfully updated” message.
 3.  System updates the contact with the new tag and updated remarks.
 
-    Use case ends.
-
 **Extensions**
-
 
 * 2a. Invalid tag format - System shows error message and prompts user to check the entered tag.
 * 2b. Duplicate tag in same command - System shows error message and prompts user to check the entered tag.
 * 2c. Remark too long / contains newline - System shows error message and prompts user to check the entered remark.
-
-
 
 **Use case 3: List all currently available suppliers (“open now”)**
 
 **MSS**
 
-1.  The user enters the open command.
+1. The user enters the open command.
 2. The system retrieves the list of all suppliers that are currently available.
 
-    Use case ends.
-
 **Extensions**
-
 
 * 2a. Invalid tag format - System shows error message and prompts user to check the entered tag.
 * 2b. Duplicate tag in same command - System shows error message and prompts user to check the entered tag.
 * 2c. Remark too long / contains newline - System shows error message and prompts user to check the entered remark.
-
-*{More to be added}*
 
 ### Non-Functional Requirements
 
@@ -464,8 +358,6 @@ System updates the contact with the new tag and updated remarks.
 4.  Error messages must clearly state what went wrong and what format is expected.
 5.  Store data without corrupting.
 6.  On invalid input, the app must not modify stored data.
-
-*{More to be added}*
 
 ### Glossary
 
@@ -477,45 +369,6 @@ System updates the contact with the new tag and updated remarks.
 * **Tag**: A short label used to classify contacts
 * **Remark**: A short note attached to a contact for operational info.
 * **Available supplier**: A supplier whose operating hours include the current time.
---------------------------------------------------------------------------------------------------------------------
-
-## **Appendix: Instructions for manual testing**
-
-Given below are instructions to test the app manually.
-
-ct with the new tag and updated remarks.
-
-
-**MSS**
-
-1.  The user enters a tag command with a supplier or consumer tag and its remarks.
-2.  The system shows a “successfully updated” message.
-3.  System refreshed the UI contact list with the latest added contact.
-
-    Use case ends.
-
-**Extensions**
-
-
-* 2a. Invalid phone format - System shows error message and does not add.
-
-* 3a.Duplicate contact detected - System rejects add and shows duplicate error.
-
-
-*{More to be added}*
-
-### Non-Functional Requirements
-
-1.  Should work on any _mainstream OS_ as long as it has Java `17` or above installed.
-2.  Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage.
-3.  A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
-
-*{More to be added}*
-
-### Glossary
-
-* **Mainstream OS**: Windows, Linux, Unix, MacOS
-* **Private contact detail**: A contact detail that is not meant to be shared with others
 
 --------------------------------------------------------------------------------------------------------------------
 
