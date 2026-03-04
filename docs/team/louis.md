@@ -9,8 +9,6 @@ NUS computer Science student
 
 ## Projects
 
-
-
 ## Skills
 
 Java, Python, and C++
